@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 3</title>
+  <link rel="stylesheet" href="../style/style3.css">
+  <link rel="shortcut icon" href="../recursos/images.png"
+    type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="../pages/index.html">Ejercicio 1</a>
+            <a class="nav-link" href="../pages/ejercicio2.html">Ejercicio 2</a>
+            <a class="nav-link" href="#">Ejercicio 3</a>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="body">
+    <div class="mb-4 w-50 mt-5">
+      <input type="text" id="tituloInput" class="form-control mb-2" placeholder="Título de la nota">
+      <textarea id="textoInput" class="form-control mb-2" placeholder="Texto de la nota"></textarea>
+      <button id="guardarNotaBtn" class="btn btn-primary mb-2">Guardar Nota</button>
+      <button id="limpiarCamposBtn" class="btn btn-secondary mb-2">Limpiar Campos</button>
+    </div>
+    <div class="mb-4 d-flex align-items-center w-50">
+      <input type="text" id="buscarInput" class="form-control me-2" placeholder="Buscar notas">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="realizadasCheckbox">
+        <label class="form-check-label" for="realizadasCheckbox">Realizadas</label>
+      </div>
+    </div>
+    <div id="contenedorNotas" class="row"></div>
+  
+  </div>
+</main>
+  <footer>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="../js/ejercicio3.js"></script>
+</body>
+
+</html>
