@@ -1,13 +1,13 @@
-// a. Crear un array donde vamos a guardar las notas
+
 let notas = [
     { id: 1, titulo: 'Sacar la basura', texto: 'Mi mamá me va a retar si no lo hago', realizada: false },
     { id: 2, titulo: 'Comer', texto: 'Quedó comida de ayer', realizada: true }
   ];
   
-  // c. Crear una variable idGlobal e inicializarla en el mismo valor del último id que creaste manualmente
+  
   let idGlobal = 2;
   
-  // Referencias a elementos del DOM
+
   let tituloInput = document.getElementById('tituloInput');
   let textoInput = document.getElementById('textoInput');
   let guardarNotaBtn = document.getElementById('guardarNotaBtn');
@@ -16,7 +16,7 @@ let notas = [
   let realizadasCheckbox = document.getElementById('realizadasCheckbox');
   let contenedorNotas = document.getElementById('contenedorNotas');
   
-  // e. Crear una función que pinte las notas en forma de tarjetas dentro del div contenedor
+ 
   let pintarNotas = (notasFiltradas) => {
     contenedorNotas.innerHTML = '';
   
@@ -47,7 +47,7 @@ let notas = [
     });
   };
   
-  // g. Crear una función agregarNota
+  
   let agregarNota = (titulo, texto) => {
     idGlobal++;
     let nuevaNota = { id: idGlobal, titulo, texto, realizada: false };
@@ -55,7 +55,7 @@ let notas = [
     pintarNotas(notas);
   };
   
-  // i. Crear la función borrarNota
+ 
   let borrarNota = (id) => {
     let index = notas.findIndex(nota => nota.id === id);
     if (index !== -1) {
@@ -64,7 +64,7 @@ let notas = [
     }
   };
   
-  // m. Crear la función marcarRealizada
+
   let marcarRealizada = (id) => {
     let nota = notas.find(nota => nota.id === id);
     if (nota) {
@@ -73,12 +73,12 @@ let notas = [
     }
   };
   
-  // p. Crear una función que filtre por el estado realizada
+ 
   let filtrarPorRealizadas = (notasArray) => {
     return notasArray.filter(nota => nota.realizada);
   };
   
-  // q. Crear una función que filtre por texto
+
   let filtrarPorTexto = (notasArray, texto) => {
     return notasArray.filter(nota => 
       nota.titulo.toLowerCase().includes(texto.toLowerCase()) || 
@@ -86,7 +86,7 @@ let notas = [
     );
   };
   
-  // Event listeners
+
   guardarNotaBtn.addEventListener('click', () => {
     let titulo = tituloInput.value.trim();
     let texto = textoInput.value.trim();
@@ -125,7 +125,6 @@ let notas = [
   
     pintarNotas(notasFiltradas);
   };
-  
-  // Inicializar
+
   pintarNotas(notas);
   
